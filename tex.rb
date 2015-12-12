@@ -1,3 +1,7 @@
+# texファイルをpandocで変換した時の\tightlistを消すrubyスクリプト
+# mdtex.sh で呼び出されるため，置いておくだけでいい
+
+
 f_name = ARGV[0].to_s
 f=File.open(f_name,"r")
 buffer = f.read();
