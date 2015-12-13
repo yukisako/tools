@@ -26,7 +26,8 @@ echo $1
 if [ "$1" = '-t' ]
 then
   platex master.tex
-
   dvipdfmx master.dvi
+  open -a Preview master.pdf
+
 fi
 
