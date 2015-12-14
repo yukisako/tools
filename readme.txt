@@ -4,6 +4,8 @@ http://mcg.hateblo.jp/entry/2015/12/12/180830 に使用方法がまとめてあ�
 toolsディレクトリをホームに作ってパスを通してあげるとコマンドみたいに使える．
 .zshrcにalias設定をしてあげると楽．
 
+
+
 またこのreadme.txtは整理したい．
 
 作者 サイト
@@ -30,3 +32,5 @@ http://yukisako.github.io
     └── test.tex
 
 このようなディレクトリ構成にするとスムーズです．
+
+このディレクトリ構成にして，cveps.shを実行すれば，img/pngの中の画像が全部img/epsの中に置き換えられる．
