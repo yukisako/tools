@@ -9,8 +9,8 @@
 echo "マークダウンで書いたものをLaTeXに変換するツール"
 read -p "please input your file: " file
 
-mdfile="${file}.md"
-texfile="${file}.tex"
+mdfile="./md/${file}.md"
+texfile="./tex/${file}.tex"
 
 echo "${mdfile}を${texfile}に変換します"
 

@@ -9,3 +9,24 @@ toolsディレクトリをホームに作ってパスを通してあげるとコ
 作者 サイト
 http://yukisako.github.io
 
+
+.
+├── README.txt
+├── img
+│   ├── eps
+│   │   └── test.eps
+│   └── png
+│       └── test.png
+├── master.aux
+├── master.dvi
+├── master.log
+├── master.pdf
+├── master.tex
+├── md
+│   └── test.md
+├── sty
+│   └── robo.sty
+└── tex
+    └── test.tex
+
+このようなディレクトリ構成にするとスムーズです．
