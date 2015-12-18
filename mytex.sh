@@ -8,9 +8,8 @@
 if [ "$1" = '-i' ]
 then
   cd ./img/png/
-  pwd
   for infile in *.png; do
-  echo $infile
+  echo "${infile}を変更します"
   convert $infile ../eps/${infile%.*}.eps ;
   done
 fi

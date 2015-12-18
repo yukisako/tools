@@ -9,4 +9,4 @@ buffer.gsub!("\\tightlist" , "\n");
 f=File.open(f_name,"w")
 f.write(buffer)
 f.close()
-puts "正常に置換が終了しました"
+puts "正常にファイル編集が終了しました"

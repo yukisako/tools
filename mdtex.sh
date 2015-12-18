@@ -7,19 +7,17 @@
 ################################
 
 echo "マークダウンで書いたものをLaTeXに変換するツール"
-read -p "please input your file: " file
-
-mdfile="./md/${file}.md"
-texfile="./tex/${file}.tex"
-
-echo "${mdfile}を${texfile}に変換します"
-
-pandoc $mdfile -o $texfile
 
 
-echo $texfile
+cd ./md
+for infile in *.md; do
+  echo "${infile}を${infile%.*}.texに変更します"
+  pandoc $infile -o ../tex/${infile%.*}.tex ;
+  ruby /Users/yukisako/tools/tex.rb ../tex/${infile%.*}.tex
+done
 
-ruby /Users/yukisako/tools/tex.rb $texfile
+cd ..
+
 
 echo $1
 
